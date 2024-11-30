@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to ADORE Restaurant!</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #e3dddd; /* White background */
+            color: #000000; /* Black text color */
+            line-height: 1.6;
+        }
+        .email-body {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #FFFFFF; /* White background */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .email-content {
+            padding: 20px;
+            text-align: center;
+        }
+        .logo {
+            max-width: 150px;
+            margin: 0 auto 20px;
+        }
+        h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #000000; /* Black heading color */
+        }
+        p {
+            margin: 10px 0;
+            font-size: 16px;
+            color: #000000; /* Black text color */
+        }
+        .activation-code {
+            font-size: 18px;
+            padding: 10px;
+            background-color: #FFFFFF; /* White background */
+            border: 2px solid #000000; /* Black border */
+            border-radius: 5px;
+            margin: 20px auto;
+            color: #000000; /* Black text color */
+            width: fit-content;
+        }
+        .support-text {
+            font-size: 14px;
+            margin-top: 20px;
+            color: #000000; /* Black text color */
+        }
+        .support-link {
+            color: #000000; /* Black text color */
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-body">
+        <div class="email-content">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmt8h3sUHQjovEyRJwx6tfcW3OAjvCy2xkDA&usqp=CAU" alt="Adore Logo" class="logo">
+            <h1>Welcome to ADORE Restaurant!</h1>
+            <p>Dear {{ user.full_name }},</p>
+            <p>We're delighted to welcome you to ADORE Restaurant. Please activate your account with the code below:</p>
+            <div class="activation-code">{{ activate_code }}</div>
+            <p class="support-text">If you have any questions, feel free to <a href="mailto:gulomovamuhlisa23@gmail.com" class="support-link">contact our support team</a>.</p>
+        </div>
+    </div>
+</body>
+</html>
